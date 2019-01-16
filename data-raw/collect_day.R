@@ -39,6 +39,7 @@ collect_day <- function(day_folder = NULL, on_hit = c("stop", "skip", "overwrite
            "overwrite" = csv2tsv(file.csv, halt = FALSE, skip = FALSE),
            csv2tsv(file.csv))
   }
+  return(day_folder)
 }
 library(withr)
 divide_into_hour_folders <- function(folder) {
@@ -59,5 +60,6 @@ divide_into_hour_folders <- function(folder) {
              
            })
 }
+divide_into_hour_folders(collect_day())
 
         
