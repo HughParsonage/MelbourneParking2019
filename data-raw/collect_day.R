@@ -60,7 +60,6 @@ divide_into_hour_folders <- function(folder) {
              
            })
 }
-divide_into_hour_folders(collect_day("data-raw/2019/1/21"))
 divide_into_hour_folders(collect_day())
 
         
